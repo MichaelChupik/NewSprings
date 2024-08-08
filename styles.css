@@ -17,6 +17,19 @@ header h1 {
     margin: 0;
 }
 
+@font-face {
+  font-family: 'Inter-Light';
+  src: url('https://static1.squarespace.com/static/611179417fb6223e91990630/t/62aa58679c74de322ee2b610/1655330920015/Inter-Light.otf');
+}
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('https://static1.squarespace.com/static/611179417fb6223e91990630/t/62aa564660b0bc0efb7d3453/1655330375985/Inter-Regular.otf');
+}
+@font-face {
+  font-family: 'Inter-Semibold';
+  src: url('https://static1.squarespace.com/static/611179417fb6223e91990630/t/62aa57706bfeba78f55314c5/1655330673081/Inter-SemiBold.otf');
+}
+
 main {
     padding: 2em;
 }
