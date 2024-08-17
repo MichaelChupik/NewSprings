@@ -3,59 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://p223.p4.n0.cdn.zight.com/items/jku02Yrz/f26f9584-7434-4577-9787-8dabfdb69240.png?v=%221cc868daf59c711c70297083c1611378%22" type="image/x-icon">
-    <title>NewSprings</title>
+    <title>Basic Webpage</title>
     <style>
-	@font-face {
-  		font-family: 'Inter-Light';
-  		src: url('https://static1.squarespace.com/static/611179417fb6223e91990630/t/62aa58679c74de322ee2b610/1655330920015/Inter-Light.otf');
-	}
-	@font-face {
-		  font-family: 'Inter-Regular';
-		  src: url('https://static1.squarespace.com/static/611179417fb6223e91990630/t/62aa564660b0bc0efb7d3453/1655330375985/Inter-Regular.otf');
-	}
-	@font-face {
-		  font-family: 'Inter-Semibold';
-		  src: url('https://static1.squarespace.com/static/611179417fb6223e91990630/t/62aa57706bfeba78f55314c5/1655330673081/Inter-SemiBold.otf');
-	}
-        body, html {
-	            margin: 60px;
-	            font-family: 'Inter-Regular', Arial, sans-serif;
-	            display: flex;
-	            background-color: #F9F9F9;
-	}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            margin-bottom: 20px;
+        }
         img {
-	            width: 60px;
-	            margin-bottom: 12px;
+            width: 100px; /* Adjust size as needed */
         }
-	h1 {
-		    color: #333335;
-		    font-family: 'Inter-Semibold', Arial, sans-serif;
-		    font-size: 24px;
-	}
+        h1 {
+            margin: 0 0 10px 0;
+        }
         p {
-	            color: #333335;
-	            font-size: 18px;
-		    line-height: 32px;
-		    font-family: 'Inter-Light', Arial, sans-serif;
-        }
-        a {
-	            text-decoration: none;
-	            border-bottom: 1px solid #A9A9A9;
-		    color: #333335;
-        }
-        a:hover {
-	            text-decoration: none;
-	            border-bottom: 1px solid #000;
-		    color: #000;
+            margin: 0 0 15px 0;
         }
     </style>
 </head>
-	
 <body>
-	<img src="https://github.com/MichaelChupik/NewSprings/blob/cfeb3b7775f7193b41077cbeb67b9fdaee66e1f4/NewSpringsLogo.png?raw=true" alt="NewSprings"><br>
-	<h1>Website in Development 2</h1><br><br>
-        <p>For inquiries or more information, please reach out to us at <a href="mailto:hello@newsprings.ca">hello@newsprings.ca</a></p>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Logo">
+            <h1>Header Title</h1>
+        </header>
+        <p>This is a paragraph of text that will be aligned to the left.</p>
+        <p>Here's another paragraph to showcase the text alignment.</p>
+    </div>
 </body>
-	
 </html>
