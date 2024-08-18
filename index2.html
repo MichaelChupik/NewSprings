@@ -113,6 +113,38 @@
             background-color: #000;
             color: #fff;
         }
+
+.marquee {
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    left: 50%; /* Centering trick */
+    transform: translateX(-50%); /* Centering trick */
+    overflow: hidden;
+}
+
+.marquee__content {
+    position: relative;
+    width: 100%; /* Ensure content inside the marquee spans the full width */
+    display: flex;
+    animation: scroll linear infinite; /* Animation for scrolling effect */
+}
+
+.marquee__item {
+    flex: none;
+    width: var(--marquee-item-width);
+    height: var(--marquee-item-height);
+    margin-right: 10px; /* Optional: Space between items */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100%));
+    }
+}
+        
         .marquee {
             position: relative; /* Keeps the marquee in its original position */
             width: 100vw; /* Extends the marquee to the full width of the viewport */
@@ -123,6 +155,7 @@
         }
 
         .marquee--8 {
+            flex: none;
             --marquee-item-width: 300px;
             --marquee-item-height: 100px;
             --marquee-duration: 32s;
@@ -131,6 +164,7 @@
         }
 
         .marquee--6 {
+            flex: none;
             --marquee-item-width: 300px;
             --marquee-item-height: 100px;
             --marquee-duration: 32s;
@@ -334,7 +368,21 @@
             </div>
         </div>
     <p>And serving many more churches, networks and ministries in a variety of marketing capacities:</p>
-    
+
+        <div class="marquee marquee--8">
+    <div class="marquee__content">
+        <img class="marquee__item" src="https://p223.p4.n0.cdn.zight.com/items/WnuW1wYA/8e588ea2-f3bf-4cc9-805b-b1148ca31644.png?v=%225d02fef84dec563585f7557c2d4c7fae%22" width="300" height="auto" alt="">
+        <img class="marquee__item" src="https://p223.p4.n0.cdn.zight.com/items/6qu1R082/f00f38ae-12d6-4c7e-a0ff-5e39adcd7ef4.png?v=%2217e151db07d138366e032c90b9ae1dac%22" width="300" height="auto" alt="">
+        <img class="marquee__item" src="https://p223.p4.n0.cdn.zight.com/items/7KuNJ2PL/4b5085ad-9fc4-4281-a06b-e33fe1c42162.png?v=%226d1ee77bddce98d3db6105186d23ee40%22" width="300" height="auto" alt="">
+        <img class="marquee__item" src="https://p223.p4.n0.cdn.zight.com/items/2Nuok2w0/4d156c54-2e50-4d95-87d1-0d287134fa85.png?v=%22c85aa005d25900c3cc5984dcca257250%22" width="300" height="auto" alt="">
+        <img class="marquee__item" src="https://p223.p4.n0.cdn.zight.com/items/eDuZzojE/de96a643-e488-4dab-841f-71c0cad3091f.png?v=%2295e2b19760cf544c9025d42381538a1e%22" width="300" height="auto" alt="">
+        <img class="marquee__item" src="https://p223.p4.n0.cdn.zight.com/items/kpuvkyKZ/35d5ebe0-1c55-430c-a6b7-e574550f42e1.png?v=%227ad403fc85bb598be75481385dc72ebf%22" width="300" height="auto" alt="">
+        <img class="marquee__item" src="https://p223.p4.n0.cdn.zight.com/items/p9uonjbo/dc70e470-9664-44a0-80ee-4009e993c5a1.png?v=%229a0c3cef9a3c9ef564724dbb86458bfe%22" width="300" height="auto" alt="">
+        <img class="marquee__item" src="https://p223.p4.n0.cdn.zight.com/items/geuKk0AK/ecaf6ff7-a35d-4005-ba3b-f3c37434eea6.png?v=%229b55ec4222eba07dc18c2e9215d2934a%22" width="300" height="auto" alt="">
+        <img class="marquee__item" src="https://p223.p4.n0.cdn.zight.com/items/7KuNJ2Ez/ce9a56fc-e512-4440-b0cb-c8d4512a37a1.png?v=%2242b2d084cd0907d68f8107670505c764%22" width="300" height="auto" alt="">
+        <img class="marquee__item" src="https://p223.p4.n0.cdn.zight.com/items/OAuvwRPy/07407d5a-b833-434c-9a50-34a43d751e46.png?v=%221edfbc8c8432d7942f2481e68da37b67%22" width="300" height="auto" alt="">
+    </div>
+</div>
     
     <div class="marquee marquee--8">
         <img class="marquee__item" src="https://p223.p4.n0.cdn.zight.com/items/WnuW1wYA/8e588ea2-f3bf-4cc9-805b-b1148ca31644.png?v=%225d02fef84dec563585f7557c2d4c7fae%22" width="300" height="auto" alt="">
