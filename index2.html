@@ -114,13 +114,12 @@
             color: #fff;
         }
         .marquee {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            width: 100%;
+            position: relative; /* Keeps the marquee in its original position */
+            width: 100vw; /* Extends the marquee to the full width of the viewport */
             overflow-x: hidden;
-            z-index: 9999;
+            left: 50%; /* Start from the middle of the viewport */
+            transform: translateX(-50%); /* Center the marquee horizontally */
+            margin-left: calc(-50vw + 50%);
         }
 
         .marquee--8 {
