@@ -109,7 +109,7 @@ p:not(.sqsrte-large) em {
 }
 @media screen and (max-width: 767px) {
   p:not(.sqsrte-large) em {
-    font-size: inherit!important;
+    font-size: initial!important;
   }
 }
 /*Large Paragraph Italic*/
