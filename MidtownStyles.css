@@ -1037,7 +1037,7 @@ button[type="submit"]:after,
   border-radius: var(--global-radius) !important;
   -webkit-border-radius: var(--global-radius) !important;
   overflow: hidden!important;
-  outline: 1px solid transparent!important;
+  outline: 0px solid transparent!important;
   transition: var(--trans);
 }
 @media screen and (max-width: 767px) {
@@ -1046,13 +1046,13 @@ button[type="submit"]:after,
   }
 }
 .accordion-item:hover {
-  outline: 1px solid #fff;
+  outline: 0px solid #fff;
   transition: var(--trans);
 }
 /*Accordion*/
 .accordion-item__title-wrapper,
 .accordion-item__description {
-  background-color: none;
+  background-color: none !important;
 }
 /*Adjust Spacing Mobile*/
 @media screen and (max-width: 767px) {
