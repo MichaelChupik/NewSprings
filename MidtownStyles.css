@@ -175,7 +175,7 @@ p:not(.sqsrte-large) a em {
 @media screen and (min-width: 767px) {
   p a em:after {
     font-family: var(--arrows) !important;
-    content: "â†’";
+    content: "\2192";
     position: absolute;
     opacity: 0;
     transition: var(--trans);
@@ -196,7 +196,7 @@ p a strong {
 p a strong:after,
 h3 a strong:after {
   font-family: var(--arrows) !important;
-  content: "â†’";
+  content: "\2192";
   padding-left: 2px;
   position: absolute;
   transition: var(--trans);
@@ -214,7 +214,7 @@ p a strong:hover:after {
 .sqsrte-large a strong em p a strong:after,
 .sqsrte-large a strong em h3 a strong:after {
   font-family: var(--arrows) !important;
-  content: "â†’";
+  content: "\2192";
   padding-left: 2px;
   position: absolute;
   transition: var(--trans);
@@ -404,7 +404,7 @@ button[type="submit"]:after,
 .join-button:after,
 .course-item__next-lesson-button:after,
 .list-item-content__button:after {
-  content: "â†’";
+  content: "\2192";
   font-family: var(--arrows) !important;
   line-height: 0!important;
   margin-left: 4px;
@@ -556,7 +556,7 @@ button[type="submit"]:after,
 /*Button Arrows*/
 .sqs-button-element--tertiary:after {
   display: flex!important;
-  content: "â†’";
+  content: "\2192";
   color: var(--white) !important;
   font-family: var(--arrows) !important;
   font-weight: 500;
@@ -1533,7 +1533,7 @@ body .sqs-block-summary-v2 .summary-block-setting-design-list .summary-item {
   opacity: 0;
   margin-left: -10px;
   font-family: var(--arrows) !important;
-  content: "â†’";
+  content: "\2192";
   transition: var(--trans);
 }
 .sqs-block-summary-v2 .summary-block-setting-design-list .sqs-gallery-design-list .summary-metadata-container--below-title {
