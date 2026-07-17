@@ -1046,7 +1046,7 @@ button[type="submit"]:after,
   }
 }
 .accordion-item:hover {
-  outline: 0px solid #fff;
+  outline: 0px solid #fff !important;
   transition: var(--trans);
 }
 /*Accordion*/
