@@ -1052,7 +1052,7 @@ button[type="submit"]:after,
 /*Accordion*/
 .accordion-item__title-wrapper,
 .accordion-item__description {
-  background-color: var(--secondary-color) !important;
+  background-color: none;
 }
 /*Adjust Spacing Mobile*/
 @media screen and (max-width: 767px) {
