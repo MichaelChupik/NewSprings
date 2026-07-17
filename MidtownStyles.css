@@ -102,7 +102,7 @@ p:not(.sqsrte-large) em {
   font-family: var(--heading), serif;
   font-size: inherit!important;
   font-style: normal;
-  font-size: 1.1em !important;
+  font-size: 1.0em !important;
   font-weight: 400!important;
   line-height: 1.4em;
   letter-spacing: 0em!important;
