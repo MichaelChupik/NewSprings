@@ -1046,7 +1046,7 @@ button[type="submit"]:after,
   }
 }
 .accordion-item:hover {
-  outline: 1px solid var(--tweak-accordion-block-stroke-color) !important;
+  outline: 1px solid #fff;
   transition: var(--trans);
 }
 /*Accordion*/
