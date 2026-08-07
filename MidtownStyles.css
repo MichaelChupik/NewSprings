@@ -123,6 +123,7 @@
 .event-card-button {
   text-align: left !important;
   margin-bottom: 10px !important;
+  margin-left: -18px !important;
 }
 @media (max-width: 768px) {
   .event-card {
