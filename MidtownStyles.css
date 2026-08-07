@@ -17,6 +17,9 @@
   border-radius: 8px;
   overflow: hidden;
   transition: all 0.25s ease;
+  mask:
+        radial-gradient(circle 25px at left 50%, transparent 99%, #000 100%),
+        linear-gradient(#000 0 0);
 }
 .event-card::before {
   content: "";
