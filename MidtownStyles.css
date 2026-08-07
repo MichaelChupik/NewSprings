@@ -159,17 +159,15 @@
   }
   .ticket-notch-top,
 .ticket-notch-bottom {
-  position: absolute;
-  top: calc(100% - 25px);
-  bottom: auto;
-  transform: none;
+    position: absolute;
+    bottom: -25px;
+    top: auto;
 
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: #F5F5F5;
-  z-index: 7;
-  pointer-events: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #F5F5F5;
+    z-index: 7;
 }
 
 .ticket-notch-top {
