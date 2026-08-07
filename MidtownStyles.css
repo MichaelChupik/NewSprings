@@ -159,7 +159,8 @@
       radial-gradient(circle, #fff 7px, transparent 7.8px)
       left center / 18px 18px repeat-x;
   }
-  .ticket-notch-top, .ticket-notch-bottom {
+  .ticket-notch-top,
+  .ticket-notch-bottom {
     position: absolute;
     bottom: -25px;
     top: auto;
