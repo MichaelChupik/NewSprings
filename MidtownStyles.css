@@ -40,7 +40,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: var(--accent);
+  background: var(--body-background) !important;
   z-index: 6;
   pointer-events: none;
 }
@@ -177,10 +177,9 @@
     right: -25px;
     box-shadow: -1px 0 2px rgba(0,0,0,.12);
   }
-  .ticket-notch-top,
-.ticket-notch-bottom {
+  .ticket-notch-top, .ticket-notch-bottom {
     top: 183px;
-}
+  }
   .event-content {
     padding: 30px 20px;
   }
