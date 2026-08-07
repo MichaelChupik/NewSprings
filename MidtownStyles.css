@@ -190,10 +190,10 @@ div.sqs-block.website-component-block.sqs-block-button.button-block {
     box-shadow: -1px 0 2px rgba(0,0,0,.12);
 }
   .event-content {
-    padding: 60px 20px 40px 20px;
+    padding: 45px 20px 40px 20px;
   }
   .event-title {
-    font-size: 24px;
+    font-size: 23px;
   }
   .event-meta {
     flex-direction: column;
