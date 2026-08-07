@@ -158,20 +158,21 @@
       left center / 18px 18px repeat-x;
   }
   .ticket-notch-top, .ticket-notch-bottom {
-    position: absolute;
-    top: calc(100% - 25px);
+    display: block;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background: #F5F5F5;
+    transform: none;
     z-index: 7;
+    top: calc(56.25vw - 45px);
+    bottom: auto;
   }
-
   .ticket-notch-top {
     left: -25px;
+    right: auto;
     box-shadow: 1px 0 2px rgba(0,0,0,.12);
   }
-
   .ticket-notch-bottom {
     right: -25px;
     left: auto;
