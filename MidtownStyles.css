@@ -1,3 +1,202 @@
+/* Event Cards */
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.event-card {
+  --image-width: 30%;
+  --gap: 40px;
+  --perforation-x: calc(var(--image-width) + (var(--gap) / 2) - 20px);
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--image-width) 1fr;
+  gap: var(--gap);
+  align-items: stretch;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+.event-card::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  bottom: 22px;
+  left: var(--perforation-x);
+  transform: translateX(-50%);
+  width: 18px;
+  z-index: 5;
+  pointer-events: none;
+  background:
+    radial-gradient(circle, #fff 7px, transparent 7.8px)
+    center top / 16px 18px repeat-y;
+}
+.ticket-notch-top,
+.ticket-notch-bottom {
+  position: absolute;
+  left: var(--perforation-x);
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--accent);
+  z-index: 6;
+  pointer-events: none;
+}
+.ticket-notch-top {
+  top: -28px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.12);
+}
+.ticket-notch-bottom {
+  bottom: -28px;
+  box-shadow: 0 -1px 2px rgba(0,0,0,.12);
+}
+.event-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  align-self: stretch;
+}
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.event-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 40px 24px 0;
+}
+.event-tag {
+  display: inline-flex;
+  align-self: flex-start;
+  background: #F7F9F8;
+  color: #394249;
+  font-family: acumin-pro-wide;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  padding: 2px 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.event-title {
+  margin: 0 0 16px;
+  font-family: acumin-pro-wide;
+  font-weight: 800;
+  font-size: clamp(24px, 2.5vw, 32px);
+  line-height: 1.2;
+  color: #394249;
+}
+.event-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+.event-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #394249;
+  font-family: Acumin-Pro-Wide, serif;
+  font-size: 15px;
+  line-height: 15px;
+}
+.event-meta i {
+  width: 18px;
+  text-align: center;
+}
+.event-description {
+  color: #394249;
+  font-family: Merriweather, serif;
+  margin: 0 0 24px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.event-card-button {
+  text-align: left !important;
+  margin-bottom: 10px !important;
+}
+@media (max-width: 768px) {
+  .event-card {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .event-card::before {
+    display: none;
+  }
+  .event-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: visible;
+  }
+  .event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .event-image::after {
+    content: "";
+    position: absolute;
+    left: 26px;
+    right: 24px;
+    bottom: -9px;
+    height: 18px;
+    z-index: 6;
+    background:
+      radial-gradient(circle, #fff 7px, transparent 7.8px)
+      left center / 18px 18px repeat-x;
+  }
+  .ticket-notch-top,
+  .ticket-notch-bottom {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--accent);
+    top: auto;
+    bottom: auto;
+    transform: none;
+    z-index: 7;
+  }
+  .ticket-notch-top {
+    left: -25px;
+    box-shadow: 1px 0 2px rgba(0,0,0,.12);
+  }
+  .ticket-notch-bottom {
+    left: auto;
+    right: -25px;
+    box-shadow: -1px 0 2px rgba(0,0,0,.12);
+  }
+  .ticket-notch-top,
+.ticket-notch-bottom {
+    top: 183px;
+}
+  .event-content {
+    padding: 30px 20px;
+  }
+  .event-title {
+    font-size: 26px;
+  }
+  .event-meta {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .event-description {
+    font-size: .9em;
+    -webkit-line-clamp: 3;
+  }
+}
+
 /*Site Background Color*/
 body {
   background-color: var(--body-background) !important;
