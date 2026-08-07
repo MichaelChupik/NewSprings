@@ -40,7 +40,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: var(--body-background) !important;
+  background: rgb(var(--color-background));
   z-index: 6;
   pointer-events: none;
 }
