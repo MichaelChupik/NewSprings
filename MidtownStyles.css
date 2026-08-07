@@ -165,7 +165,8 @@
     background: #F5F5F5;
     transform: none;
     z-index: 7;
-    top: calc(56.25vw - 25px);
+    position: absolute;
+    top: calc(100% - 25px);
   }
 
   .ticket-notch-top {
