@@ -157,21 +157,24 @@
       radial-gradient(circle, #fff 7px, transparent 7.8px)
       left center / 18px 18px repeat-x;
   }
-  .ticket-notch-top, .ticket-notch-bottom {
-    position: absolute;
-    top: calc(100% - 25px);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #F5F5F5;
-    z-index: 7;
-  }
-  .ticket-notch-top {
-    left: -25px;
-  }
-  .ticket-notch-bottom {
-    right: -25px;
-  }
+  .ticket-notch-top,
+.ticket-notch-bottom {
+  position: absolute;
+  top: calc(100% - 25px);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #F5F5F5;
+  z-index: 7;
+}
+
+.ticket-notch-top {
+  left: -25px;
+}
+
+.ticket-notch-bottom {
+  right: -25px;
+}
   .event-content {
     padding: 30px 20px;
   }
