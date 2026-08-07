@@ -181,12 +181,10 @@ div.sqs-block.website-component-block.sqs-block-button.button-block {
 .ticket-notch-top {
     left: -25px;
     right: auto;
-    box-shadow: 1px 0 2px rgba(0,0,0,.12);
 }
 .ticket-notch-bottom {
     right: -25px;
     left: auto;
-    box-shadow: -1px 0 2px rgba(0,0,0,.12);
 }
   .event-content {
     padding: 40px 20px 40px 20px;
