@@ -189,11 +189,12 @@ div.sqs-block.website-component-block.sqs-block-button.button-block {
     padding: 40px 20px 40px 20px;
   }
   .event-title {
-    font-size: 23px;
+    font-size: 26px;
   }
   .event-meta {
     flex-direction: column;
     gap: 12px;
+    font-size: 14px;
   }
   .event-description {
     font-size: .9em;
