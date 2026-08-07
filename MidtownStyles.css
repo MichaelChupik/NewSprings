@@ -129,9 +129,14 @@
   .event-card {
     grid-template-columns: 1fr;
     gap: 0;
+    overflow: visible;
   }
   .event-card::before {
     display: none;
+  }
+  .event-content {
+    overflow: hidden;
+    border-radius: 0 0 8px 8px;
   }
   .event-image {
     position: relative;
