@@ -123,7 +123,9 @@
 .event-card-button {
   text-align: left !important;
   margin-bottom: 10px !important;
-  margin-left: -18px !important;
+}
+.sqs-layout .sqs-row .sqs-block:last-child {
+  padding: 0px !important;
 }
 @media (max-width: 768px) {
   .event-card {
@@ -157,30 +159,26 @@
       radial-gradient(circle, #fff 7px, transparent 7.8px)
       left center / 18px 18px repeat-x;
   }
-  .ticket-notch-top,
-.ticket-notch-bottom {
+  .ticket-notch-top, .ticket-notch-bottom {
     position: absolute;
     bottom: -25px;
     top: auto;
-
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background: #F5F5F5;
     z-index: 7;
-}
-
-.ticket-notch-top {
-  left: -25px;
-  right: auto;
-  box-shadow: 1px 0 2px rgba(0,0,0,.12);
-}
-
-.ticket-notch-bottom {
-  right: -25px;
-  left: auto;
-  box-shadow: -1px 0 2px rgba(0,0,0,.12);
-}
+  }
+  .ticket-notch-top {
+    left: -25px;
+    right: auto;
+    box-shadow: 1px 0 2px rgba(0,0,0,.12);
+  }
+  .ticket-notch-bottom {
+    right: -25px;
+    left: auto;
+    box-shadow: -1px 0 2px rgba(0,0,0,.12);
+  }
   .event-content {
     padding: 30px 20px;
   }
