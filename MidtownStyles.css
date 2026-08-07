@@ -124,7 +124,7 @@
   text-align: left !important;
   margin-bottom: 10px !important;
 }
-.sqs-block.website-component-block.sqs-block-button.button-block {
+div.sqs-block.website-component-block.sqs-block-button.button-block {
   padding: 0px !important;
   margin: 0px !important;
 }
@@ -190,7 +190,7 @@
     box-shadow: -1px 0 2px rgba(0,0,0,.12);
 }
   .event-content {
-    padding: 30px 20px;
+    padding: 40px 20px 30px 20px;
   }
   .event-title {
     font-size: 26px;
