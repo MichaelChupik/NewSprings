@@ -131,7 +131,8 @@ div.sqs-block.website-component-block.sqs-block-button.button-block {
   .event-card {
     grid-template-columns: 1fr;
     gap: 0;
-    overflow: visible;
+    overflow-x: hidden;
+    overflow-y: visible;
   }
   .event-card::before {
     display: none;
