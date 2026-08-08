@@ -29,7 +29,7 @@
   z-index: 5;
   pointer-events: none;
   background:
-    radial-gradient(circle, #fff 7px, transparent 7.8px)
+    radial-gradient(circle, #fff 7px, transparent 4.8px)
     center top / 16px 18px repeat-y;
 }
 .ticket-notch-top,
@@ -160,7 +160,7 @@ div.sqs-block.website-component-block.sqs-block-button.button-block {
     height: 18px;
     z-index: 6;
     background:
-      radial-gradient(circle, #fff 7px, transparent 7.8px)
+      radial-gradient(circle, #fff 7px, transparent 4.8px)
       left center / 18px 18px repeat-x;
   }
   .ticket-notch-top,
