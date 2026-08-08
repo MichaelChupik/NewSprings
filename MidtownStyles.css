@@ -29,7 +29,7 @@
   z-index: 5;
   pointer-events: none;
   background:
-    radial-gradient(circle, #fff 4px, transparent 4.8px)
+    radial-gradient(circle 4px at center, #fff 99%, transparent 100%)
     center top / 16px 18px repeat-y;
 }
 .ticket-notch-top,
