@@ -152,17 +152,17 @@ div.sqs-block.website-component-block.sqs-block-button.button-block {
     display: block;
   }
   .event-image::after {
-    content: "";
-    position: absolute;
-    left: 26px;
-    right: 24px;
-    bottom: -9px;
-    height: 18px;
-    z-index: 6;
-    background:
-      radial-gradient(circle, #fff 4px, transparent 4.8px)
-      left center / 18px 18px repeat-x;
-  }
+  content: "";
+  position: absolute;
+  left: 26px;
+  right: 24px;
+  bottom: -9px;
+  height: 18px;
+  z-index: 6;
+  background:
+    radial-gradient(circle 4px at center, #fff 99%, transparent 100%)
+    left center / 18px 18px repeat-x;
+}
   .ticket-notch-top,
 .ticket-notch-bottom {
     position: absolute;
