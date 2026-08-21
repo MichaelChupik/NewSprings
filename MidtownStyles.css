@@ -21,7 +21,7 @@
   border-radius: 8px;
   overflow: hidden;
   transition: all 0.25s ease;
-  margin: 0 132px 32px;
+  margin: 0 16px 32px;
 }
 .event-card::before {
   content: "";
