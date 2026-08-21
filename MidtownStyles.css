@@ -21,6 +21,7 @@
   border-radius: 8px;
   overflow: hidden;
   transition: all 0.25s ease;
+  min-height: 760px;
 }
 .event-card::before {
   content: "";
@@ -135,6 +136,7 @@ div.sqs-block.website-component-block.sqs-block-button.button-block {
     gap: 0;
     overflow-x: hidden;
     overflow-y: visible;
+    min-height: 0;
   }
   .event-card::before {
     display: none;
