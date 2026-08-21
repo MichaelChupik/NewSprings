@@ -1,4 +1,7 @@
 /* Event Cards */
+.event-card-container {
+  container-type: inline-size;
+}
 .events-list {
   display: flex;
   flex-direction: column;
