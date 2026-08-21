@@ -5,7 +5,7 @@
 .events-list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 32px;
   container-type: inline-size;
 }
 .event-card {
