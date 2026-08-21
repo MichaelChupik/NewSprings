@@ -137,6 +137,7 @@ div.sqs-block.website-component-block.sqs-block-button.button-block {
     overflow-x: hidden;
     overflow-y: visible;
     min-height: 0;
+    margin: 0 0px 16px;
   }
   .event-card::before {
     display: none;
