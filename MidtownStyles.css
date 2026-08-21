@@ -8,6 +8,7 @@
   --image-width: 30%;
   --gap: 40px;
   --perforation-x: calc(var(--image-width) + (var(--gap) / 2) - 20px);
+  container-type: inline-size;
   position: relative;
   display: grid;
   grid-template-columns: var(--image-width) 1fr;
