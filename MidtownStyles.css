@@ -1,12 +1,12 @@
 /* Event Cards */
 .event-card-container {
   container-type: inline-size;
-  margin: 0 32px 64px;
 }
 .events-list {
   display: flex;
   flex-direction: column;
   container-type: inline-size;
+  gap: 32px;
 }
 .event-card {
   --image-width: 30%;
