@@ -130,6 +130,9 @@ div.sqs-block.website-component-block.sqs-block-button.button-block {
   margin: 0px !important;
 }
 @container (max-width: 640px) {
+  .events-list {
+    margin: 0 0px 16px !important;
+  }
   .event-card {
     grid-template-columns: 1fr;
     gap: 0;
