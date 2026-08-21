@@ -21,7 +21,6 @@
   border-radius: 8px;
   overflow: hidden;
   transition: all 0.25s ease;
-  min-height: 1200px;
 }
 .event-card::before {
   content: "";
