@@ -1,267 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NewSprings Media</title>
-    <style>
-        @font-face {
-            font-family: 'Inter-Light';
-            src: url('https://static1.squarespace.com/static/611179417fb6223e91990630/t/62aa58679c74de322ee2b610/1655330920015/Inter-Light.otf');
-        }
-        @font-face {
-            font-family: 'Inter-Regular';
-            src: url('https://static1.squarespace.com/static/611179417fb6223e91990630/t/62aa564660b0bc0efb7d3453/1655330375985/Inter-Regular.otf');
-        }
-        @font-face {
-            font-family: 'Inter-Semibold';
-            src: url('https://static1.squarespace.com/static/611179417fb6223e91990630/t/62aa57706bfeba78f55314c5/1655330673081/Inter-SemiBold.otf');
-        }
-        body {
-            font-family: 'Inter-Regular', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #fff;
-        }
-        .container {
-            max-width: 950px;
-            margin: 0 auto;
-            padding: 25px;
-        }
-        .newspringslogo {
-            width: 240px;
-            padding-top: 25px;
-            padding-bottom: 20px;
-        }
-        h1 {
-            margin: 20px 0 30px 0;
-            font-family: 'Inter-Semibold', Arial, sans-serif;
-            font-size: 2.1em;
-            line-height: 1.2;
-        }
-        h2 {
-            margin: 20px 0 12px 0;
-            font-family: 'Inter-Semibold', Arial, sans-serif;
-            font-size: 1.6em;
-            line-height: 1.2;
-        }
-        p {
-            margin: 0 0 15px 0;
-            font-family: 'Inter-Light', Arial, sans-serif;
-            font-size: 1.13em;
-            line-height: 1.8;
-        }
-        a {
-            color: #05ACC8;
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s ease, border-bottom 0.3s ease;
-            border-bottom: 1px solid transparent;
-        }
-        a:hover {
-            color: #05ACC8;
-            border-bottom: 1px solid #05ACC8;
-        }
-        hr {
-            border: 0;
-            height: 1px;
-            background: #DADADA;
-            margin: 60px 0;
-        }
-        .card-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 40px;
-            padding: 40px 20px 40px 0px;
-        }
-        .card {
-            overflow: hidden;
-        }
-        .card img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        .card h3 {
-            margin: 15px 15px 0px 15px;
-            font-size: 19px;
-            color: #000;
-            text-align: center;
-        }
-        .card p {
-            margin: 0px 15px 15px 15px;
-            font-size: 13px;
-            color: #666;
-            text-align: center;
-        }
-        .card button {
-            display: block;
-            width: 80%;
-            margin: 15px auto;
-            padding: 10px 10px 10px 10px;
-            border: 1px solid #000;
-            background-color: #fff;
-            font-weight: 700;
-            text-transform: uppercase;
-            color: #000;
-            font-size: 12px;
-            cursor: pointer;
-            transition: background-color 0s ease;
-            text-align: center;
-        }
-        .card button:hover {
-            background-color: #000;
-            color: #fff;
-        }
-        .custom-table {
-            width: 100%;
-            margin: 20px auto;
-            border-collapse: collapse;
-            font-family: 'Inter-Light', Arial, sans-serif;
-            font-size: 14px;
-        }
-        .custom-table td {
-            padding: 12px;
-            border: none;
-            text-align: left;
-        }
-        .custom-table tr {
-            border-bottom: 1px solid #DADADA;
-        }
-        .custom-table td:first-child {
-            font-family: 'Inter-Semibold', Arial, sans-serif;
-            font-size: 16px;
-        }
-        .custom-table td:last-child {
-            text-align: right;
-        }
-        .custom-table tr:last-child, .custom-table td:last-child {
-            border-bottom: none !important;
-        } 
-        footer {
-            padding: 15px 15px 15px 0px;
-            font-family: 'Inter-Light', Arial, sans-serif;
-            font-size: 12px;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            color: #555;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Thoughtful, modern websites for churches and ministries across Canada. Explore the work of NewSprings Media.">
+  <title>NewSprings Media — Websites for Churches & Ministries</title>
+  <style>
+    :root {
+      --ink: #17191b;
+      --muted: #686d72;
+      --line: #e8e9e7;
+      --paper: #fff;
+      --soft: #f7f8f6;
+      --accent: #05acc8;
+      --content: 1120px;
+      --radius: 5px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      line-height: 1.65;
+    }
+    a { color: inherit; text-decoration: none; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    img { display: block; max-width: 100%; }
+    .wrap { width: min(var(--content), calc(100% - 48px)); margin-inline: auto; }
+    .site-header { padding: 28px 0; border-bottom: 1px solid var(--line); }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .logo { width: 190px; height: auto; }
+    .header-actions { display: flex; align-items: center; gap: 22px; }
+    .status-link::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: #c58a35; }
+    .status-link:hover { color: var(--ink); }
+    .header-actions { display: flex; align-items: center; justify-content: flex-end; gap: 20px; }
+    .availability { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); font-size: 12px; white-space: nowrap; }
+    .availability-dot { width: 6px; height: 6px; border-radius: 50%; background: #c58a35; flex: 0 0 auto; }
+    .header-link { font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; }
+    .header-link span { color: var(--accent); font-size: 18px; transition: transform .2s ease; }
+    .header-link:hover span { transform: translateX(3px); }
+    .hero { padding: clamp(68px, 10vw, 124px) 0 78px; max-width: 850px; }
+    .eyebrow { margin: 0 0 22px; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    h1 { max-width: 800px; margin: 0; font-size: clamp(42px, 7vw, 76px); line-height: 1.04; letter-spacing: -.065em; font-weight: 600; }
+    .hero-copy { max-width: 650px; margin: 28px 0 0; color: var(--muted); font-size: clamp(17px, 2vw, 20px); line-height: 1.75; }
+    .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 22px; margin-top: 32px; }
+    .button { display: inline-flex; justify-content: center; align-items: center; gap: 10px; min-height: 48px; padding: 0 19px; background: var(--ink); color: white; border: 1px solid var(--ink); border-radius: 3px; font-size: 14px; font-weight: 600; transition: background .2s ease, border-color .2s ease, transform .2s ease; }
+    .button:hover { background: #34383b; border-color: #34383b; transform: translateY(-1px); }
+    .text-link { font-size: 14px; font-weight: 600; border-bottom: 1px solid #b8bdbe; padding-bottom: 3px; }
+    .text-link:hover { border-color: var(--accent); color: #07869a; }
+    .intro-note { margin-top: 44px; padding-top: 20px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 8px 26px; color: var(--muted); font-size: 13px; }
+    .intro-note span::before { content: "•"; color: var(--accent); margin-right: 9px; }
+    .work { padding: 54px 0 92px; background: var(--soft); }
+    .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 30px; }
+    .section-heading h2, .contact h2 { margin: 0; font-size: clamp(30px, 4vw, 43px); letter-spacing: -.045em; line-height: 1.12; font-weight: 600; }
+    .section-heading p { margin: 0; max-width: 340px; color: var(--muted); font-size: 14px; }
+    .projects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 42px 28px; }
+    .project { min-width: 0; }
+    .project-image { display: block; overflow: visible; background: transparent; aspect-ratio: auto; border: 0; }
+    .project-image img { width: 100%; height: auto; object-fit: contain; object-position: center top; transform: scale(.97); transform-origin: center center; transition: transform .6s ease; }
+    .project-image:hover img, .project-image:focus-visible img { transform: scale(1); }
+    .project-meta { display: flex; align-items: start; justify-content: space-between; gap: 16px; padding-top: 17px; }
+    .project h3 { margin: 0; font-size: 19px; line-height: 1.3; letter-spacing: -.025em; font-weight: 600; }
+    .project p { margin: 5px 0 0; color: var(--muted); font-size: 14px; }
+    .project-arrow { flex: 0 0 auto; display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid #d9ddda; border-radius: 50%; font-size: 17px; transition: background .2s, color .2s, border-color .2s; }
+    .project a:hover .project-arrow { background: var(--ink); color: #fff; border-color: var(--ink); }
+    .more-work { margin-top: 58px; }
+    .more-work h3 { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
+    .work-list { border-top: 1px solid #dfe2df; }
+    .work-row { display: grid; grid-template-columns: 1.3fr 1fr auto; align-items: center; gap: 20px; padding: 17px 0; border-bottom: 1px solid #dfe2df; font-size: 14px; }
+    .work-row strong { font-weight: 600; }
+    .work-row .location { color: var(--muted); }
+    .work-row a { font-weight: 600; white-space: nowrap; }
+    .work-row a:hover { color: #07869a; }
+    .contact { padding: clamp(70px, 10vw, 112px) 0; }
+    .contact-inner { display: grid; grid-template-columns: 1.1fr .9fr; gap: 60px; align-items: start; }
+    .contact h2 { max-width: 520px; }
+    .contact-copy { color: var(--muted); font-size: 16px; margin: 20px 0 0; max-width: 520px; }
+    .contact-card { padding: 27px; background: var(--soft); border: 1px solid var(--line); }
+    .contact-card .label { margin: 0 0 9px; color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .12em; font-weight: 700; }
+    .contact-card .name { margin: 0; font-size: 18px; font-weight: 600; }
+    .contact-card .role { margin: 3px 0 18px; color: var(--muted); font-size: 14px; }
+    .contact-email { font-size: 16px; font-weight: 600; overflow-wrap: anywhere; border-bottom: 1px solid #c8ccca; padding-bottom: 4px; }
+    .contact-email:hover { color: #07869a; border-color: var(--accent); }
+    footer { border-top: 1px solid var(--line); padding: 22px 0; color: var(--muted); font-size: 12px; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
+    @media (max-width: 700px) {
+      .wrap { width: min(var(--content), calc(100% - 36px)); }
+      .site-header { padding: 22px 0; }
+      .logo { width: 155px; }
+      .header-actions { gap: 12px; }
+      .availability { font-size: 11px; gap: 6px; }
+      .header-link { font-size: 13px; }
+      .header-actions { gap: 12px; }
+    .hero { padding: 68px 0 58px; }
+      .hero-copy { margin-top: 22px; }
+      .intro-note { margin-top: 34px; }
+      .work { padding: 48px 0 64px; }
+      .section-heading { display: block; }
+      .section-heading p { margin-top: 12px; }
+      .projects { grid-template-columns: 1fr; gap: 32px; }
+      .project-image { aspect-ratio: auto; }
+      .work-row { grid-template-columns: 1fr auto; gap: 4px 14px; }
+      .work-row .location { grid-column: 1; grid-row: 2; }
+      .work-row a { grid-column: 2; grid-row: 1 / span 2; }
+      .contact-inner { grid-template-columns: 1fr; gap: 30px; }
+      .contact-card { padding: 23px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+  </style>
 </head>
-    
 <body>
-    <div class="container">
-        <img class="newspringslogo" src="https://p223.p4.n0.cdn.zight.com/items/Kou8mypX/ac81c4b9-a08b-4f0f-b9e0-2bbaf5aa413f.png?v=%224221efa098a28c876dea224b3a053a56%22" alt="NewSprings">
-        <h1>Building Websites for Churches</h1>
-        <p>Hi! I’m a freelance web designer based in Alberta, and I specialize in building websites for churches. With over a decade of experience, I’ve built websites for churches all across Canada, including church planting networks and&nbsp;ministries.</p>
-        <p>Feel free to check out some of my recent work below. If you have any questions or would like a free quote for your church, please email me. I'd love to hear from you!</p>
-        <p style="padding-bottom: 10px">Blessings,</p>
-        <div style="font-family: 'Inter-Regular', Arial, sans-serif; font-size: 14px; color: #333;">
-            <table cellpadding="0" cellspacing="0" style="max-width: 700px;">
-                <tr>
-                    <td style="vertical-align: top;">
-                        <p style="margin: 0; line-height: 1.2; font-size: 17px; font-weight: 700; color: #000;">Michael Chupik, BBA (Marketing)</p>
-                        <p style="margin: 5px 0 4px 0; line-height: 1.2; font-size: 13px; color: #666;">Freelance Web Designer</p>
-                        <p style="margin: 0; font-size: 15px;"><a href="mailto:hello@newsprings.ca">hello@newsprings.ca</a></p>
-                    </td>
-                </tr>
-            </table>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#" aria-label="NewSprings Media home">
+        <img class="logo" src="https://p223.p4.n0.cdn.zight.com/items/Kou8mypX/ac81c4b9-a08b-4f0f-b9e0-2bbaf5aa413f.png?v=%224221efa098a28c876dea224b3a053a56%22" alt="NewSprings Media">
+      </a>
+      <div class="header-actions">
+        <span class="availability"><span class="availability-dot" aria-hidden="true"></span>Currently booked · Inquiries welcome</span>
+        <a class="header-link" href="mailto:hello@newsprings.ca">Let’s talk <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <p class="eyebrow">Web Design & Marketing Services</p>
+      <h1>Thoughtful websites for churches and ministries.</h1>
+      <p class="hero-copy">I partner with churches and ministries across Canada to design modern, thoughtfully crafted websites that communicate their mission clearly and connect with their communities.</p>
+      <div class="hero-actions">
+        <a class="button" href="mailto:hello@newsprings.ca?subject=Website%20Project%20Enquiry">Request a free quote <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="#work">Explore selected work</a>
+      </div>
+      <div class="intro-note">
+        <span>Christian web designer</span> 
+        <span>Serving churches and ministries</span>
+        <span>Over 10 years of experience</span>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="wrap">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Featured projects</p>
+            <h2>Websites that serves the mission.</h2>
+          </div>
+          <p>A selection of websites I've recently built for churches and ministries.</p>
         </div>
-        <hr>
-        <h2>Porfolio</h2>
-        <div class="card-container">
-            <div class="card">
-                <a href="https://midtownchurch.com" target="_blank"><img src="https://p223.p4.n0.cdn.zight.com/items/01a06147-4019-7430-b8e7-f51e06d93ac8/a6c1055f-2faa-47c8-a09d-a6ac00c4fd5c.png?v=f5ca03d06d8a4f9610329419f4a3492b"></a>
-                <h3>Midtown Church</h3>
-                <p>Church in Vancouver, BC</p>
-                <button onclick="window.open('https://midtownchurch.com', '_blank')">Visit Website</button>
-            </div>
-            <div class="card">
-                <a href="https://portcitychurch.ca" target="_blank"><img src="https://p223.p4.n0.cdn.zight.com/items/9ZuJGYBo/a42c2716-633f-47ca-837f-ce87ba493364.png?v=%225b9afd11cb870f9393b61b5b4a0b2a45%22"></a>
-                <h3>Port City Church</h3>
-                <p>Church in Halifax, NS</p>
-                <button onclick="window.open('https://portcitychurch.ca', '_blank')">Visit Website</button>
-            </div>
-            <div class="card">
-                <a href="https://compassregina.com" target="_blank"><img src="https://p223.p4.n0.cdn.zight.com/items/4guGY5jL/af5e7c44-7a09-46f7-912c-2b8529514766.png?v=%22bf480dec6e53ad409e5414d3edc62b06%22"></a>
-                <h3>The Compass Church</h3>
-                <p>Church in Regina, SK</p>
-                <button onclick="window.open('https://compassregina.com', '_blank')">Visit Website</button>
-            </div>
-            <div class="card">
-                <a href="https://c2ccollective.com" target="_blank"><img src="https://p223.p4.n0.cdn.zight.com/items/d5uj8zpg/d66f957a-2963-46fd-99e1-d45fbb6e83ca.png?v=%220801deca5bf53f38adc44d19f200f5e9%22"></a>
-                <h3>C2C Collective</h3>
-                <p>Church Planting Network</p>
-                <button onclick="window.open('https://c2ccollective.com', '_blank')">Visit Website</button>
-            </div>
-            <div class="card">
-                <a href="https://praxischurch.ca" target="_blank"><img src="https://p223.p4.n0.cdn.zight.com/items/o0uA4kmK/1d129697-7a64-458b-8f6c-c7453a7234c7.png?v=%22df5d6451bb84053635a110a3603ff528%22"></a>
-                <h3>Praxis Church</h3>
-                <p>Church in Kelowna, BC</p>
-                <button onclick="window.open('https://praxischurch.ca', '_blank')">Visit Website</button>
-            </div>
-            <div class="card">
-                <a href="https://agcofcanada.com" target="_blank"><img src="https://p223.p4.n0.cdn.zight.com/items/bLuv8Jwb/6426e58e-4876-44d6-b49b-7a2eaecc1e2d.png?v=%220187a27de90578a71d77694a2784475f%22"></a>
-                <h3>AGC of Canada</h3>
-                <p>Church Planting Network</p>
-                <button onclick="window.open('https://agcofcanada.com', '_blank')">Visit Website</button>
-            </div>
+
+        <div class="projects">
+          <article class="project">
+            <a class="project-image" href="https://midtownchurch.com" target="_blank" rel="noopener noreferrer" aria-label="View Midtown Church website">
+              <img loading="lazy" src="https://p223.p4.n0.cdn.zight.com/items/01a06147-4019-7430-b8e7-f51e06d93ac8/a6c1055f-2faa-47c8-a09d-a6ac00c4fd5c.png?v=f5ca03d06d8a4f9610329419f4a3492b" alt="Midtown Church website preview">
+            </a>
+            <div class="project-meta"><div><h3>Midtown Church</h3><p>Vancouver, British Columbia</p></div><a class="project-arrow" href="https://midtownchurch.com" target="_blank" rel="noopener noreferrer" aria-label="Visit Midtown Church">↗</a></div>
+          </article>
+          <article class="project">
+            <a class="project-image" href="https://portcitychurch.ca" target="_blank" rel="noopener noreferrer" aria-label="View Port City Church website">
+              <img loading="lazy" src="https://p223.p4.n0.cdn.zight.com/items/9ZuJGYBo/a42c2716-633f-47ca-837f-ce87ba493364.png?v=%225b9afd11cb870f9393b61b5b4a0b2a45%22" alt="Port City Church website preview">
+            </a>
+            <div class="project-meta"><div><h3>Port City Church</h3><p>Halifax, Nova Scotia</p></div><a class="project-arrow" href="https://portcitychurch.ca" target="_blank" rel="noopener noreferrer" aria-label="Visit Port City Church">↗</a></div>
+          </article>
+          <article class="project">
+            <a class="project-image" href="https://compassregina.com" target="_blank" rel="noopener noreferrer" aria-label="View The Compass Church website">
+              <img loading="lazy" src="https://p223.p4.n0.cdn.zight.com/items/4guGY5jL/af5e7c44-7a09-46f7-912c-2b8529514766.png?v=%22bf480dec6e53ad409e5414d3edc62b06%22" alt="The Compass Church website preview">
+            </a>
+            <div class="project-meta"><div><h3>The Compass Church</h3><p>Regina, Saskatchewan</p></div><a class="project-arrow" href="https://compassregina.com" target="_blank" rel="noopener noreferrer" aria-label="Visit The Compass Church">↗</a></div>
+          </article>
+          <article class="project">
+            <a class="project-image" href="https://c2ccollective.com" target="_blank" rel="noopener noreferrer" aria-label="View C2C Collective website">
+              <img loading="lazy" src="https://p223.p4.n0.cdn.zight.com/items/d5uj8zpg/d66f957a-2963-46fd-99e1-d45fbb6e83ca.png?v=%220801deca5bf53f38adc44d19f200f5e9%22" alt="C2C Collective website preview">
+            </a>
+            <div class="project-meta"><div><h3>C2C Collective</h3><p>Church planting network</p></div><a class="project-arrow" href="https://c2ccollective.com" target="_blank" rel="noopener noreferrer" aria-label="Visit C2C Collective">↗</a></div>
+          </article>
+          <article class="project">
+            <a class="project-image" href="https://praxischurch.ca" target="_blank" rel="noopener noreferrer" aria-label="View Praxis Church website">
+              <img loading="lazy" src="https://p223.p4.n0.cdn.zight.com/items/o0uA4kmK/1d129697-7a64-458b-8f6c-c7453a7234c7.png?v=%22df5d6451bb84053635a110a3603ff528%22" alt="Praxis Church website preview">
+            </a>
+            <div class="project-meta"><div><h3>Praxis Church</h3><p>Kelowna, British Columbia</p></div><a class="project-arrow" href="https://praxischurch.ca" target="_blank" rel="noopener noreferrer" aria-label="Visit Praxis Church">↗</a></div>
+          </article>
+          <article class="project">
+            <a class="project-image" href="https://agcofcanada.com" target="_blank" rel="noopener noreferrer" aria-label="View AGC of Canada website">
+              <img loading="lazy" src="https://p223.p4.n0.cdn.zight.com/items/bLuv8Jwb/6426e58e-4876-44d6-b49b-7a2eaecc1e2d.png?v=%220187a27de90578a71d77694a2784475f%22" alt="AGC of Canada website preview">
+            </a>
+            <div class="project-meta"><div><h3>AGC of Canada</h3><p>National church network</p></div><a class="project-arrow" href="https://agcofcanada.com" target="_blank" rel="noopener noreferrer" aria-label="Visit AGC of Canada">↗</a></div>
+          </article>
         </div>
-        
-        <table class="custom-table">
-            <tr>
-                <td>Wayfarers' Church</td>
-                <td>Spryfield, NS</td>
-                <td><a href="https://wayfarerschurch.ca" target="_blank">Visit Website</a></td>
-            </tr>
-            <tr>
-                <td>Crossway Community Church</td>
-                <td>Canmore, AB</td>
-                <td><a href="https://www.crosswaycanmore.com" target="_blank">Visit Website</a></td>
-            </tr>
-            <tr>
-                <td>Valleyview Bible Church</td>
-                <td>Kamloops, BC</td>
-                <td><a href="https://valleyviewchurch.ca" target="_blank">Visit Website</a></td>
-            </tr>
-            <tr>
-                <td>PAXnorth Church</td>
-                <td>Halifax, NS</td>
-                <td><a href="https://paxnorth.ca" target="_blank">Visit Website</a></td>
-            </tr>
-            <tr>
-                <td>Creekside Fellowship Church</td>
-                <td>Dawson Creek, BC</td>
-                <td><a href="https://creeksidefellowship.ca" target="_blank">Visit Website</a></td>
-            </tr>
-            <tr>
-                <td>Bridgewater Open Bible Church</td>
-                <td>Bridgewater, NS</td>
-                <td><a href="https://bobc.ca" target="_blank">Visit Website</a></td>
-            </tr>
-            <tr>
-                <td>The Gathering</td>
-                <td>Saskatoon, SK</td>
-                <td><a href="https://thegatheringsaskatoon.ca" target="_blank">Visit Website</a></td>
-            </tr>
-            <tr>
-                <td>City to City Canada</td>
-                <td>National</td>
-                <td><a href="https://citytocity.ca" target="_blank">Visit Website</a></td>
-            </tr>
-        </table>
 
-        <hr>
-        
-        <p>If you would like more information or receive a free quote, please email: <a href="mailto:hello@newsprings.ca">hello@newsprings.ca</a></p>
+        <div class="more-work">
+          <h3>More projects</h3>
+          <div class="work-list">
+            <div class="work-row"><strong>Wayfarers’ Church</strong><span class="location">Spryfield, Nova Scotia</span><a href="https://wayfarerschurch.ca" target="_blank" rel="noopener noreferrer">Visit site ↗</a></div>
+            <div class="work-row"><strong>Crossway Community Church</strong><span class="location">Canmore, Alberta</span><a href="https://www.crosswaycanmore.com" target="_blank" rel="noopener noreferrer">Visit site ↗</a></div>
+            <div class="work-row"><strong>Valleyview Bible Church</strong><span class="location">Kamloops, British Columbia</span><a href="https://valleyviewchurch.ca" target="_blank" rel="noopener noreferrer">Visit site ↗</a></div>
+            <div class="work-row"><strong>PAXnorth Church</strong><span class="location">Halifax, Nova Scotia</span><a href="https://paxnorth.ca" target="_blank" rel="noopener noreferrer">Visit site ↗</a></div>
+            <div class="work-row"><strong>Creekside Fellowship Church</strong><span class="location">Dawson Creek, British Columbia</span><a href="https://creeksidefellowship.ca" target="_blank" rel="noopener noreferrer">Visit site ↗</a></div>
+            <div class="work-row"><strong>Bridgewater Open Bible Church</strong><span class="location">Bridgewater, Nova Scotia</span><a href="https://bobc.ca" target="_blank" rel="noopener noreferrer">Visit site ↗</a></div>
+            <div class="work-row"><strong>The Gathering</strong><span class="location">Saskatoon, Saskatchewan</span><a href="https://thegatheringsaskatoon.ca" target="_blank" rel="noopener noreferrer">Visit site ↗</a></div>
+            <div class="work-row"><strong>City to City Canada</strong><span class="location">National</span><a href="https://citytocity.ca" target="_blank" rel="noopener noreferrer">Visit site ↗</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <br>
-        
-        <footer>
-            &copy; 2026 NewSprings Media. All rights reserved.
-        </footer>
+    <section class="wrap contact" id="contact">
+      <div class="contact-inner">
+        <div>
+          <p class="eyebrow">Start a conversation</p>
+          <h2>Let’s build something great.</h2>
+          <p class="contact-copy">Looking to upgrade your church website or want to learn more? Get in touch with me by email for a no-obligation conversation and a free quote.</p>
+        </div>
+        <div class="contact-card">
+          <p class="label">Contact me</p>
+          <p class="name">Michael Chupik, BBA (Marketing)</p>
+          <p class="role">Freelance Christian Web Designer · NewSprings</p>
+          <a class="contact-email" href="mailto:hello@newsprings.ca">hello@newsprings.ca ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <footer>
+    <div class="wrap footer-inner"><span>© 2026 NewSprings Media. All rights reserved.</span><span>Websites for churches and ministries across Canada.</span></div>
+  </footer>
 </body>
 </html>
